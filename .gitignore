@@ -1,0 +1,24 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+publish/
+
+# Visual Studio and JetBrains user files
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.sln.docstates
+
+# Test and coverage results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/

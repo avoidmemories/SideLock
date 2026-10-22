@@ -1,0 +1,6 @@
+# Keep repository text files consistent across Windows and GitHub.
+* text=auto eol=lf
+
+# Binary application assets must not be altered by Git.
+*.ico binary
+*.png binary
