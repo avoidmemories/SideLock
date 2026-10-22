@@ -8,6 +8,12 @@ internal static class Program
     [STAThread]
     private static void Main()
     {
+        using var singleInstanceMutex = new Mutex(initiallyOwned: true, @"Local\SideLock.SingleInstance", out var isFirstInstance);
+        if (!isFirstInstance)
+        {
+            return;
+        }
+
         ApplicationConfiguration.Initialize();
         Application.Run(new TrayApplicationContext());
     }
